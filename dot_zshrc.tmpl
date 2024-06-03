@@ -37,8 +37,11 @@ go_bin_path=$HOME/go/bin
 [[ -d $go_bin_path ]] && export PATH="$PATH:$go_bin_path"
 
 # rust
-rust_env_path=$HOME/.cargo/env
+rust_path=$HOME/.cargo 
+rust_binary_path=$rust_path/bin
+rust_env_path=$rust_binary_path/env
 [[ -f $rust_env_path ]] && source $rust_env_path
+[[ -f $rust_binary_path ]] && source $rust_binary_path
 
 # tmux
 alias t="tmux"
