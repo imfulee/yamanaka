@@ -1,0 +1,54 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename "$HOME/.zshrc"
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+source '/usr/share/zsh-antidote/antidote.zsh'
+antidote load
+autoload -Uz promptinit && promptinit && prompt powerlevel10k
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export EDITOR=nvim
+
+[[ -f $HOME/arch.sh ]] && source $HOME/arch.sh
+[[ -f $HOME/git.sh ]] && source $HOME/git.sh 
+
+# fnm
+export PATH="$PATH:$HOME/.fnm:"
+eval "$(fnm env --use-on-cd)" > /dev/null 2>&1
+
+# local bin
+local_bin_path=$HOME/.local/bin
+[[ -d $local_bin_path ]] && export PATH="$PATH:$local_bin_path"
+
+# go
+go_bin_path=$HOME/go/bin
+[[ -d $go_bin_path ]] && export PATH="$PATH:$go_bin_path"
+
+# rust
+rust_env_path=$HOME/.cargo/env
+[[ -f $rust_env_path ]] && source $rust_env_path
+
+# tmux
+alias t="tmux"
+alias ta="tmux attach"
+alias tat="tmux attach -t"
+
+{{- if eq .environment.is_work_machine true }}
+# Work specific
+[[ -f $HOME/Lawsnote.sh ]] && source $HOME/Lawsnote.sh
+{{- end }}
+
+# hack to stop zsh-autosuggestion errors
+unset ZSH_AUTOSUGGEST_USE_ASYNC
