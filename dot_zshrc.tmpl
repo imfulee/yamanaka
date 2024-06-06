@@ -25,8 +25,12 @@ export EDITOR=nvim
 [[ -f $HOME/git.sh ]] && source $HOME/git.sh 
 
 # fnm
-export PATH="$PATH:$HOME/.fnm:"
-eval "$(fnm env --use-on-cd)" > /dev/null 2>&1
+fnm_path=$HOME/.local/share/fnm
+if [[ -d $fnm_path ]]; then
+	export PATH="$PATH:$fnm_path"
+	eval "$(fnm env)"
+	# eval "$(fnm env --use-on-cd)" > /dev/null 2>&1
+fi
 
 # local bin
 local_bin_path=$HOME/.local/bin
