@@ -29,6 +29,8 @@ fnm_path=$HOME/.local/share/fnm
 if [[ -d $fnm_path ]]; then
 	export PATH="$PATH:$fnm_path"
 	eval "$(fnm env)"
+	
+	# To change node version on cd
 	# eval "$(fnm env --use-on-cd)" > /dev/null 2>&1
 fi
 
