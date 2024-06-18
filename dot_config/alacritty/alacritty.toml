@@ -1,4 +1,4 @@
-import = [".config/alacritty/theme/github_light.toml"]
+import = [".config/alacritty/theme/catppuccin-latte.toml"]
 live_config_reload = true
 
 [bell]
