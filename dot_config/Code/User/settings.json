@@ -1,10 +1,20 @@
 {
-  "window.titleBarStyle": "custom",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.fontFamily": "JetBrainsMono NF",
-  "workbench.startupEditor": "none",
-  "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.cursorStyle": "block",
+  "editor.stickyScroll.enabled": true,
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.enableStickyScroll": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -34,19 +44,12 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "go.toolsManagement.autoUpdate": true,
   "svelte.enable-ts-plugin": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.enableStickyScroll": true,
-  "editor.stickyScroll.enabled": true,
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
-  "workbench.colorTheme": "GitHub Light",
-  "editor.formatOnSave": true,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  }
 }
