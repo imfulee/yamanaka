@@ -10,7 +10,6 @@
   "window.titleBarStyle": "custom",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Light",
-  "workbench.editor.showTabs": "single",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.enableStickyScroll": true,
