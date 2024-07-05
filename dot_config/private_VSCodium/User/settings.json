@@ -1,0 +1,10 @@
+{
+  "editor.fontFamily": "JetBrainsMono NF",
+  "editor.cursorStyle": "block",
+  "window.titleBarStyle": "custom",
+  "workbench.startupEditor": "none",
+  "editor.formatOnSave": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.iconTheme": "material-icon-theme"
+}
