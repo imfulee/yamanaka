@@ -11,6 +11,7 @@ updatesoftware() {
 
 	if [ -f "/usr/bin/flatpak" ]; then
 		flatpak update -y
+		flatpak remove --unsued 
 	fi
 }
 
