@@ -49,6 +49,9 @@ rust_env_path=$rust_binary_path/env
 [[ -f $rust_env_path ]] && source $rust_env_path
 [[ -f $rust_binary_path ]] && source $rust_binary_path
 
+# aliases
+alias lg=lazygit
+
 {{- if eq .environment.is_work_machine true }}
 # Work specific
 [[ -f $HOME/Lawsnote.sh ]] && source $HOME/Lawsnote.sh
