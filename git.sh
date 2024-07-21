@@ -18,13 +18,13 @@ gitrm-branch() {
 }
 
 gitlogs() {
-	if [ -z "$1" ]; then
-		echo "usage: gitfile-logs PATH/TO/FILE"
-		return 0
-	fi
+  if [ -z "$1" ]; then
+    echo "usage: gitlogs PATH/TO/FILE"
+    return 0
+  fi
 
-	file_path=$1
-	git log --follow -p -- $file_path
+  file_path=$1
+  git log --follow -p -- $file_path
 }
 
 gitstash() {
