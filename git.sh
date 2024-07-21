@@ -1,20 +1,20 @@
 gitrm-non-remote() {
-	git fetch -p
-	for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do
-		git branch -D $branch
-	done
+  git fetch -p
+  for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do
+    git branch -D $branch
+  done
 }
 
 gitrm-branch() {
-	if [ -z "$1" ]; then
-		echo "usage: gitbranch-rm BRANCH"
-		return 0
-	fi
+  if [ -z "$1" ]; then
+    echo "usage: gitbranch-rm BRANCH"
+    return 0
+  fi
 
-	branch_name=$1
+  branch_name=$1
 
-	git branch -d $branch_name
-	git push origin -d $branch_name
+  git branch -d $branch_name
+  git push origin -d $branch_name
 }
 
 gitlogs() {
@@ -28,6 +28,6 @@ gitlogs() {
 }
 
 gitstash() {
-	git add .
-	git stash
+  git add .
+  git stash
 }
