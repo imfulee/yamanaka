@@ -2,7 +2,7 @@ import = [".config/alacritty/theme/catppuccin-latte.toml"]
 live_config_reload = true
 [shell] 
 program = "/usr/bin/zsh"
-args = ["-l", "-c", "zellij attach --create"]
+args = ["-l", "-c", "tmux new-session -A -s main"]
 
 [bell]
 animation = "EaseOutExpo"
