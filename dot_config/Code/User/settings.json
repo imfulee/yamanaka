@@ -51,5 +51,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "scm.showHistoryGraph": false
 }
