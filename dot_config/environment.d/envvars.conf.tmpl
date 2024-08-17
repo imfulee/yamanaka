@@ -1,6 +1,9 @@
 # input method
+{{- if ne .environment.desktop_environment "KDE_Plasma" }}
+# Unset the below two because of https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#KDE_Plasma 
 GTK_IM_MODULE=fcitx
 QT_IM_MODULES="wayland;fcitx;ibus"
+{{- end }}
 XMODIFIERS=@im=fcitx
 GLFW_IM_MODULE=ibus
 
