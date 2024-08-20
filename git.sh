@@ -31,3 +31,7 @@ gitstash() {
   git add .
   git stash
 }
+
+gitstash-drop() {
+  git stash drop "stash@{0}"
+}
