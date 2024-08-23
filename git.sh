@@ -1,7 +1,7 @@
 gitrm-non-remote() {
   git fetch -p
   for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do
-    git branch -D $branch
+    git branch -D "$branch"
   done
 }
 
@@ -13,8 +13,8 @@ gitrm-branch() {
 
   branch_name=$1
 
-  git branch -d $branch_name
-  git push origin -d $branch_name
+  git branch -d "$branch_name"
+  git push origin -d "$branch_name"
 }
 
 gitlogs() {
@@ -24,7 +24,7 @@ gitlogs() {
   fi
 
   file_path=$1
-  git log --follow -p -- $file_path
+  git log --follow -p -- "$file_path"
 }
 
 gitstash() {
