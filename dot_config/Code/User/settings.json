@@ -9,7 +9,7 @@
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Atom One Light",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.enableStickyScroll": true,
