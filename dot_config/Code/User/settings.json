@@ -52,5 +52,6 @@
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "explorer.confirmDelete": false,
-  "scm.showHistoryGraph": false
+  "scm.showHistoryGraph": false,
+  "makefile.configureOnOpen": false
 }
