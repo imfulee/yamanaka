@@ -53,5 +53,8 @@
   },
   "explorer.confirmDelete": false,
   "scm.showHistoryGraph": false,
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "zig.initialSetupDone": true,
+  "zig.path": "zig",
+  "zig.zls.path": "zls"
 }
