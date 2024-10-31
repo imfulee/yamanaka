@@ -64,4 +64,7 @@
   "files.associations": {
     "*.tmpl": "templ"
   },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
