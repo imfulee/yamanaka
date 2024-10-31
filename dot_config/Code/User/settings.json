@@ -56,5 +56,6 @@
   "makefile.configureOnOpen": false,
   "zig.initialSetupDone": true,
   "zig.path": "zig",
-  "zig.zls.path": "zls"
+  "zig.zls.path": "zls",
+  "typescript.tsserver.log": "off",
 }
