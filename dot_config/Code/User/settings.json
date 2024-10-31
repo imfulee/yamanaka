@@ -58,4 +58,7 @@
   "zig.path": "zig",
   "zig.zls.path": "zls",
   "typescript.tsserver.log": "off",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
 }
