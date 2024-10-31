@@ -10,5 +10,7 @@
   "editor.minimap.enabled": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "zig.initialSetupDone": false,
   }
 }
