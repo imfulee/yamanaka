@@ -6,3 +6,5 @@ used-space() {
 
   du -c -d 1 -h "$dir" | sort -h
 }
+
+alias rsync-flagged="rsync -zhvP"
