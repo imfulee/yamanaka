@@ -5,7 +5,6 @@ ratemirrors() {
 
 updatesoftware() {
   if [ -f "/etc/arch-release" ]; then
-    sudo pacman -Syu
     yay -Syu
   fi
 
