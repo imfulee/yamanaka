@@ -25,6 +25,7 @@
         defaultBranch = main
 
 [diff]
+	# nicer looking diffs
         algorithm = histogram
         colorMoved = plain
         mnemonicPrefix = true
