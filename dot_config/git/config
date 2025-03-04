@@ -1,11 +1,49 @@
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RF
+
 [interactive]
 	diffFilter = diff-so-fancy --patch
+
 [column]
-	ui = never
+	ui = auto
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = version:refname
+
+[init]
+        defaultBranch = main
+
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+
+[rerere]
+        enabled = true
+        autoupdate = true
+
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
 [includeIf "gitdir:~/personal/**"]
 	path = ~/.config/git/personal.gitconfig
+
 [includeIf "gitdir:~/work/**"]
 	path = ~/.config/git/work.gitconfig
