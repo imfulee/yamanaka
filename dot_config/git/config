@@ -4,7 +4,7 @@
 	
 	# for faster git status in big git repositories
 	fsmonitor = true
-        untrackedCache = true
+  untrackedCache = true
 
 [merge]
 	# conflictstyle = zdiff3
@@ -57,4 +57,4 @@
 	path = ~/.config/git/personal.gitconfig
 
 [includeIf "gitdir:~/work/**"]
-	path = ~/.config/git/work.gitconfig
+  path = ~/.config/git/work.gitconfig
