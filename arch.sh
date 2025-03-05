@@ -25,6 +25,11 @@ updateall() {
   updatefirmware
 }
 
+cleanup-orphans() {
+  # cleanup orphaned packages
+  sudo pacman -Rns $(pacman -Qtdq)
+}
+
 # pacman browse remote packages
 pkgsremote() {
   pacman -Slq | fzf --preview 'pacman -Si {}' --layout=reverse
