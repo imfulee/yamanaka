@@ -27,7 +27,7 @@ updateall() {
 
 cleanup-orphans() {
   # cleanup orphaned packages
-  sudo pacman -Rns $(pacman -Qtdq)
+  sudo pacman -Rns "$(pacman -Qtdq)"
 }
 
 # pacman browse remote packages
