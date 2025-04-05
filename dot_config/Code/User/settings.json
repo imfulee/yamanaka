@@ -6,12 +6,15 @@
   "editor.stickyScroll.enabled": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.enabled": true,
+  "explorer.confirmDelete": false,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Atom One Light",
-  "workbench.editor.centeredLayoutFixedWidth": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.centeredLayoutFixedWidth": false,
   "workbench.tree.enableStickyScroll": true,
   "terminal.integrated.defaultProfile.linux": "zsh",
   "[python]": {
@@ -21,9 +24,7 @@
       "source.organizeImports": "explicit"
     }
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "[jsonc]": {},
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
@@ -34,6 +35,7 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
+  "typescript.tsserver.log": "off",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
@@ -48,16 +50,13 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "files.insertFinalNewline": false,
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-  "explorer.confirmDelete": false,
-  "scm.showHistoryGraph": false,
   "makefile.configureOnOpen": false,
-  "zig.initialSetupDone": true,
   "zig.path": "zig",
   "zig.zls.path": "zls",
-  "typescript.tsserver.log": "off",
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
@@ -66,5 +65,38 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "macros.list": {
+    "saveAndExitVimInsertMode": [
+      "workbench.action.files.save",
+      "extension.vim_escape"
+    ]
+  },
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": { "<C-f>": false, "<C-h>": false },
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["g", "r"],
+  //     "commands": ["editor.action.gotoReferences"]
+  //   }
+  // ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.gotoReferences"]
+    }
+  ],
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
