@@ -8,3 +8,5 @@ used-space() {
 }
 
 alias rsync-flagged="rsync -zhvP"
+
+alias fnvim="nvim $(fzf)"
