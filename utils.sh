@@ -4,9 +4,11 @@ used-space() {
     dir="."
   fi
 
-  du -c -d 1 -h "$dir" | sort -h
+  sudo du -c -d 1 -h "$dir" | sort -h
 }
 
 alias rsync-flagged="rsync -zhvP"
 
-alias fnvim="nvim $(fzf)"
+alias fnvim='nvim $(fzf)'
+
+alias fcmd="history 0 | fzf"
